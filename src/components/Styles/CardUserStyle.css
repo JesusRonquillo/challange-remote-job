@@ -95,19 +95,21 @@ body {
   background-color: #fff;
   border-radius: 10px;
   transition: 0.5s;
+  border: solid;
 }
 
 .header-modal {
   background-color: #0b6f72;
-  width: 100%;
+  width: 99.5%;
   color: white;
   padding: 10px;
+  border-radius: 5px;
 }
 .btn-close {
   margin: 20px;
 }
 .card .contact .btn:hover,
-.btn-close {
+.btn-close:hover {
   background-color: #0b6164;
   pointer-events: all;
 }
@@ -116,4 +118,22 @@ body {
 .btn-modal:hover {
   box-shadow: 0 5px 15px rgba(3, 89, 92, 0.5);
   transform: translateY(-15px);
+}
+
+@media (max-width: 500px) {
+  .btn-modal {
+    font-size: 11px;
+    position: absolute;
+    right: 70px;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+  }
+  .header-modal {
+    background-color: #0b6f72;
+    width: 92%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
 }

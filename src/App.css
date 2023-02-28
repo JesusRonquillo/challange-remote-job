@@ -5,3 +5,8 @@
   padding: 10px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .location {
+    font-size: 25px;
+  }
+}
